@@ -1,10 +1,10 @@
 <template>
   <header>
-    <nav>
+    <nav class="d_flex_between">
       <img src='../assets/dc-logo.png' alt="">
       
       <ul>
-        <li v-for="link, index in menuLinks" :key="index" ><a :href="link.url" :class="{ 'current': link.current }">{{ link.text }}</a></li>
+        <li v-for="link, index in menuLinks" :key="index" :class="{'current': link.current }"><a :href="link.url" >{{ link.text }}</a></li>
       </ul>
     </nav>
   </header>
@@ -79,9 +79,6 @@ export default {
     
     nav{
       height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
 
       img{
         width: 70px;
@@ -99,12 +96,11 @@ export default {
           font-size: 13px;
           font-weight: 600;
           color: $brand_secondary_color;
-          line-height: 99px;
+          line-height: 94px;
 
-          .current {
+          &.current {
             color: $brand_main_color;          
             border-bottom: 1px solid $brand_main_color;
-            padding-bottom: 35px;
             border-bottom-width: 6px;
           }
         }
