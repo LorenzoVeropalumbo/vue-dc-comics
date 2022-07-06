@@ -7,6 +7,7 @@
     </main>
 
     <DcFooterComp />
+    <DcFooterBottom />
   </div>
 </template>
 
@@ -18,6 +19,7 @@
   import DcMainSellComp from "./components/DcMainSellComp.vue";
   import DcMainInfo from "./components/DcMainInfo.vue";
   import DcFooterComp from "./components/DcFooterComp.vue";
+  import DcFooterBottom from "./components/DcFooterBottom.vue";
 
   export default {
     name: 'App',
@@ -26,6 +28,7 @@
       DcMainSellComp,
       DcMainInfo,
       DcFooterComp,
+      DcFooterBottom,
     }
   }
 </script>

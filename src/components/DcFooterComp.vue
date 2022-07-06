@@ -38,10 +38,7 @@
           <li><a href="#">DC Power Visa</a></li>
         </ul>
       </div>
-      <div>
-        <div>
-          <img class="footer-logo" src="../assets/dc-logo-bg.png" alt="">
-        </div>
+      <div class="bg-img">
       </div>
          
     </div>
@@ -58,17 +55,19 @@
   footer{   
     background-image: url(../assets/footer-bg.jpg);
     background-size: cover;
-    padding: 20px 0 60px;
     color: #949494;
     font-size: 12px;
     .container{
       display: flex;
-
+      justify-content: space-between;
+      
       .footer-top{    
         
+        padding: 40px 0 0;
+        margin: 0 20px;
         position: relative;
         z-index: 1;
-        width: 35%;
+        width: 40%;
         display: flex;
         justify-content: space-between;
 
@@ -80,21 +79,18 @@
           color: white;
           font-size: 21px;
           font-weight: 700;
-          padding: 20px 0 15px;
+          padding: 10px 0;
         }
 
         
       }
-      div{       
-        div{
-          overflow: hidden;
-          position: absolute;
-          top: 35%;
-          left: 50%;        
-          img.footer-logo{                     
-            width: 500px;          
-          }
-        }
+      div.bg-img{
+        height: 370px;
+        width: 450px;
+        background-image: url(../assets/dc-logo-bg.png);
+        background-size: cover;
+        background-position: center;
+        
       }      
     }
   }
