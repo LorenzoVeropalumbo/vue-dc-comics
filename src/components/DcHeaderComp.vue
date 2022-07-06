@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header>
     <nav>
       <img src='../assets/dc-logo.png' alt="">
       
@@ -84,13 +84,15 @@ export default {
       justify-content: space-between;
 
       img{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         vertical-align: middle;
       }
 
       ul{
+        
         display: flex;
+        
         li{
           padding: 0 15px;
           text-transform: uppercase;
