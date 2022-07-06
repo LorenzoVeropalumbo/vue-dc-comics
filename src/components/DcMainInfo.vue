@@ -62,8 +62,8 @@
         align-items: center;
         
         img{
-          width: 45px;
-          height: 50px;
+          width: 55px;
+          height: 60px;
         }
         
         a{

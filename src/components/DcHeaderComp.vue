@@ -77,6 +77,7 @@ export default {
 <style lang="scss" scoped>
   //scss import 
   @import "../style/variables";
+  
   header{
     
     nav{
