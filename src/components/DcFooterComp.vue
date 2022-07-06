@@ -67,7 +67,7 @@
         margin: 0 20px;
         position: relative;
         z-index: 1;
-        width: 40%;
+        width: 30%;
         display: flex;
         justify-content: space-between;
 
