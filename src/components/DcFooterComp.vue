@@ -86,7 +86,7 @@
       }
       div.bg-img{
         height: 370px;
-        width: 450px;
+        width: 560px;
         background-image: url(../assets/dc-logo-bg.png);
         background-size: cover;
         background-position: center;
