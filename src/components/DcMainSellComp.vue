@@ -7,9 +7,9 @@
 </template>
 
 <script>
-export default {
- name:"DcMainSellComp"
-}
+  export default {
+    name:"DcMainSellComp"
+  }
 </script>
 
 <style lang="scss" scoped>

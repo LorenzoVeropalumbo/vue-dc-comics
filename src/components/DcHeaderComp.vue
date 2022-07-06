@@ -1,8 +1,9 @@
 <template>
   <header>
     <nav class="d_flex_between">
-      <img src='../assets/dc-logo.png' alt="">
-      
+      <!-- image logo -->
+      <img src='../assets/dc-logo.png' alt="">  
+        <!-- Nav ul -->
       <ul>
         <li v-for="link, index in menuLinks" :key="index" :class="{'current': link.current }"><a :href="link.url" >{{ link.text }}</a></li>
       </ul>
@@ -15,6 +16,7 @@ export default {
   name: "DcHeaderComp",
   data() {
     return{
+      //Li links list
       menuLinks: [
         {
           text: 'characters',
@@ -87,15 +89,17 @@ export default {
       }
 
       ul{
-        
+        width: 60%;
         display: flex;
-        
+        height: 100%;
+        justify-content: space-around;
+
         li{
-          padding: 0 15px;
           text-transform: uppercase;
           font-size: 13px;
           font-weight: 600;
           color: $brand_secondary_color;
+          height: 100%;
           line-height: 94px;
 
           &.current {
@@ -105,8 +109,7 @@ export default {
           }
         }
       }
-    }
-    
+    }  
   }
   
 </style>
