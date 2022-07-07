@@ -1,7 +1,8 @@
 <template>
   <div id="app" >
     <DcHeaderComp class="container"/>
-    <main>
+    <DcBannerComp :imgBanner="imgUrl"/>
+    <main>   
       <DcMainSellComp />
       <DcMainInfo />
     </main>
@@ -20,7 +21,7 @@
   import DcMainInfo from "./components/DcMainInfo.vue";
   import DcFooterComp from "./components/DcFooterComp.vue";
   import DcFooterBottom from "./components/DcFooterBottom.vue";
-
+  import DcBannerComp from "./components/DcBannerComp.vue";
   export default {
     name: 'App',
     components: {
@@ -29,6 +30,13 @@
       DcMainInfo,
       DcFooterComp,
       DcFooterBottom,
+      DcBannerComp,
+    },
+    data() {
+      return {
+        // url banner image
+        imgUrl: require("./assets/jumbotron.jpg")
+      }
     }
   }
 </script>
